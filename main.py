@@ -5,8 +5,9 @@ def main():
     format_dictionary(characters_in_text, text)
     sort_list(list_of_dicts)
     # print(f"{wordcount} words found in the document")
+    print(f"--- Begin report of {book_path} --- \n {wordcount} words found in the document")
     for item in list_of_dicts:
-        print(f"The {item['key']} character was found {item['value']} times")
+        print(f"The '{item['key']}' character was found {item['value']} times")
 
 def sort_on(dict):
     return dict["value"]
@@ -45,10 +46,6 @@ def format_dictionary(characters_in_text, text):
 
 def sort_list(list_of_dicts):
     return list_of_dicts.sort(reverse=True, key=sort_on)
-    
-def create_report():
-    
-
 
 
 # format_dictionary(characters_in_text)
